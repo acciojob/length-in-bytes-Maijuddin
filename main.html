@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+
+<script>
+function byteSize(str) {
+  // Create a Blob object with the string
+  var blob = new Blob([str]);
+  
+  // Retrieve the size of the Blob object in bytes
+  return blob.size;
+}
+
+// Test the function
+console.log(byteSize('hello world')); // 11
+console.log(byteSize('안녕하세요')); // 15
+console.log(byteSize('')); // 0
+	
 </script>
 
 </body>
-
 </html>
